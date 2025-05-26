@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,7 +20,27 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  /* added, allowing icon & maindiv divs to sit next to one another */
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+/* added, allowing header and close button to sit next to one another
+justifying content so flex space sits between elements */
+.header {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* added */
+.header,
+.text {
+  margin-bottom: 10px;
 }
 
 .icon {
@@ -33,6 +54,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* keep shape of circle */
+  flex-shrink: 0;
 }
 
 .close-button {
