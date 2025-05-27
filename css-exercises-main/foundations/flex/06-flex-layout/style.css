@@ -1,11 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* added: changed to flex with column direction and space-between so elements stay top, center, and left */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* solution uses flex: 1 on .content instead of spacing-between so div fills space*/
 }
+
+/* added */
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links,
+.right-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.content {
+  /* flex: 1; solution*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  /* solution has flex: 1 */
+}
+a {
+  text-decoration: none;
+  color: gray; /* #666 in solution */
+}
+/* end of new addition */
 
 img {
   width: 600px;
@@ -16,6 +54,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* added padding, changed to right values after viewing solution */
+  padding: 8px 16px;
 }
 
 input {
