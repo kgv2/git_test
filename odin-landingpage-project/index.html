@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Landing Page</title>
-    <script src="styles.css"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div id="herospace">
         <ul id="header">
-            <li class="headerlinks">
+            <li class="leftlinks">
                 <a href="index.html">
                     <figure><img src="images/businessicon.png" alt="Header Generic Company Logo" id="businesslogo">
                         <figcaption>
@@ -22,15 +22,19 @@
                     </figure>
                 </a>
             </li>
-            <li class="headerlinks">Services</li>
-            <li class="headerlinks">About Us</li>
-            <li class="headerlinks">Contact</li>
+            <div class="rightlinks">
+                <li class="headerlinks"><a href="">Services</a></li>
+                <li class="headerlinks"><a href="">About Us</a></li>
+                <li class="headerlinks"><a href="">Contact</a></li>
+            </div>
         </ul>
         <div id="welcomemessage">
-            <h1>This Website is Awesome</h1>
-            <p>Description of the company and who we are</p>
+            <div id="herotext">
+                <h1>This Website is Awesome</h1>
+                <p>Description of the company and who we are</p>
+                <button>Learn More</button>
+            </div>
             <img src="images/team.jpg" alt="Team at Generic Company" id="teamphoto">
-            <button>Learn More</button>
         </div>
     </div>
     <div id="infospace">
@@ -49,7 +53,8 @@
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="images/payments.jpg" alt="Buyer and seller interacting with mobile payment processing terminal">
+                <img src="images/payments.jpg"
+                    alt="Buyer and seller interacting with mobile payment processing terminal">
                 <figcaption></figcaption>
             </figure>
         </div>

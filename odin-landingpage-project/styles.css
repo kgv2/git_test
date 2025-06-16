@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Container Styling */
+body {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+body > * {
+    padding: 0 20vw;
+}
+
+/* Herospace start */
+#herospace {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+  height: 400px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftlinks {
+  flex: 1 0 auto;
+}
+
+.rightlinks {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex: 0 0 auto;
+}
+
+#welcomemessage {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#herotext{
+    flex-shrink: 0;
+}
+
+#herotext > * {
+  margin-bottom: 10px;
+}
+
+#herospace,
+footer {
+  background-color: #1f2937;
+}
+/* Herospace end */
+
+/* Infospace start */
+#infospace{
+    display: flex;
+    flex-direction: column;
+}
+#images{
+    display: flex;
+}
+/* Infospace end */
+
+/* Quotespace start */
+
+/* Quotespace end */
+
+
+/* Element/Tag Styling*/
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #e5e7eb;
+}
+
+.rightlinks a,
+p {
+  font-size: 18px;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+img {
+  width: auto;
+  height: 225px;
+}
+
+h1,
+p {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+#header figure {
+  margin: 0px;
+}
+
+#header figcaption {
+  margin: auto;
+  font-size: 8px;
+}
+
+#businesslogo {
+  width: 50px;
+  height: auto;
+}
